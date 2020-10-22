@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
+import Login from './components/Login';
 
 function App() {
 
-  // const id = 756709098e964f248bc984e064603b17
   return (
     <div className="app">
-      <h1>heyy app</h1>
+      {/* Spotify Logo */}
+      {/* Login with spotify button */}
+      <Login />
     </div>
   );
 }
