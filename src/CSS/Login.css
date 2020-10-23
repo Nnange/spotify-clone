@@ -6,7 +6,7 @@
 }
 
 .login > img {
-  width: 100%;
+  width: 60%;
 }
 
 .login > a {
@@ -17,4 +17,10 @@
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 414px) {
+  .login > img {
+    width: 100%;  
+  }
 }
