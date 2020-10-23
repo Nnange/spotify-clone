@@ -8,14 +8,17 @@ import RepeatIcon from '@material-ui/icons/Repeat';
 import PlaylistPlayIcon from '@material-ui/icons/PlaylistPlay';
 import VolumeDownIcon from '@material-ui/icons/VolumeDown';
 import { Grid, Slider } from '@material-ui/core';
+import { useDataLayerValue } from '../DataLayer';
 
 const Footer = () => {
+    const [{user}, dispatch] = useDataLayerValue();
+
     return (
         <div className="footer">
             <div className="footer__left">
                 <img 
                     className="footer__albumLogo" 
-                    src="" 
+                    src={user?.images[0]?.url} 
                     alt=""
                 />
                 <div className="footer__songInfo">
